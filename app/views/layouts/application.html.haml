@@ -5,6 +5,7 @@
     %title
       PeachMelpa &vert;
       = @title
+    %meta{name:"viewport", content:"width=device-width, initial-scale=1"}
     %meta{name: "description", content: "PeachMelpa is a collection of themes for GNU Emacs, retrieved from MELPA.org. Automatically refreshed on an hourly basis so can put a touch of colour on the most powerful editor in the world. "}
     = csrf_meta_tags
     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
@@ -17,5 +18,9 @@
 
       gtag('config', 'UA-119680842-1');
   %body
-    = yield
+    .header
+      %h1 Peach Melpa
+      %h2 a gallery of Emacs themes from MELPA.org
+    .gallery
+      = yield
     = javascript_pack_tag 'application'

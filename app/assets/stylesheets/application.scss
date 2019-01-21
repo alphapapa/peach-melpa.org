@@ -24,9 +24,12 @@ html, body {
 }
 
 body {
-  padding: $spacer * 4;
-  margin: 0;
   font-family: $primary-font;
+}
+
+.gallery {
+  padding: $spacer * 2;
+  margin: 0;
   font-size: $default-font-size;
   background: $background-color;
   color: $primary-text-color;
@@ -61,5 +64,16 @@ a, button {
   &:hover {
     color: #fff;
     border-color: white;
+  }
+}
+
+.header {
+  white-space: pre-line;
+  background: #111;
+  width: 100%;
+  padding: 0 $spacer * 2;
+
+  h1 {
+    text-transform: uppercase;
   }
 }
